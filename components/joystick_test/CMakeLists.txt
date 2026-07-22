@@ -1,0 +1,4 @@
+add_executable(joystick_test main.cpp)
+target_link_libraries(joystick_test PRIVATE pico_stdlib hardware_adc galleon_common)
+target_include_directories(joystick_test PRIVATE ${PROJECT_SOURCE_DIR}/common)
+galleon_configure_firmware(joystick_test)

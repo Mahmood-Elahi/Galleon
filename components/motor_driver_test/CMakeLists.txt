@@ -1,0 +1,4 @@
+add_executable(motor_driver_test main.cpp)
+target_link_libraries(motor_driver_test PRIVATE pico_stdlib hardware_pwm hardware_clocks)
+target_include_directories(motor_driver_test PRIVATE ${PROJECT_SOURCE_DIR}/common)
+galleon_configure_firmware(motor_driver_test)
